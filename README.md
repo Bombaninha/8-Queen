@@ -23,11 +23,11 @@ Algumas coisas que percebemos:
 
 ![Resultados](https://user-images.githubusercontent.com/40179398/136102991-3072d5b5-c03f-47f9-9a3a-eae233026677.png)
 
-Número de conflitos do melhor indivíduo retornado pela função: 8
-Geração com maior número de conflitos: Geração 61 com 14 conflitos.
-Geração com menor número de conflitos: Geração 88 com 3 conflitos.
-Geração com maior média de conflitos: Geração 61 com média de 14 conflitos.
-Geração com menor média de conflitos: Geração 88 com média de 3 conflitos.
+* Número de conflitos do melhor indivíduo retornado pela função: 8
+* Geração com maior número de conflitos: Geração 61 com 14 conflitos.
+* Geração com menor número de conflitos: Geração 88 com 3 conflitos.
+* Geração com maior média de conflitos: Geração 61 com média de 14 conflitos.
+* Geração com menor média de conflitos: Geração 88 com média de 3 conflitos.
 
 #### Parâmetros
 
