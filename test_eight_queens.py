@@ -1,6 +1,6 @@
 import unittest
 import eight_queens
-#import timer
+import timer
 
 class TestEightQueens(unittest.TestCase):
     # Conflict
@@ -266,7 +266,7 @@ class TestEightQueens(unittest.TestCase):
         ]
 
         self.assertEqual(result, eight_queens.top(1, participants))   
-'''
+
     def test_run_ga(self):
         """
         Testa APENAS se o algoritmo executa no tempo especificado.
@@ -280,7 +280,6 @@ class TestEightQueens(unittest.TestCase):
         )
         if response == 'timeout':
             self.fail("run_ga ran out of time")
-'''
 
 if __name__ == '__main__':
     unittest.main()
