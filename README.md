@@ -38,3 +38,12 @@ Para os resultados obtidos, utilizamos a seguinte chamada:
 * Número de participantes do torneio (_k_): 2
 * Probabilidade de mutação (_m_): 0.15
 * Vai haver elitismo (_e_): True
+
+### Alegrete
+
+theta_0=-3.1, theta_1=-1.11, 
+alpha=0.01, num_iterations=500
+
+Com esses valores chegamos ao um erro quadrático final de: 8.959027357713508
+
+
