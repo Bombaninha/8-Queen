@@ -39,11 +39,21 @@ Para os resultados obtidos, utilizamos a seguinte chamada:
 * Probabilidade de mutação (_m_): 0.15
 * Vai haver elitismo (_e_): True
 
+#### Dificuldades
+
+Estranhamos que, apesar de seguir o algoritmo dado em aula e utilizarmos parâmetros semelhantes, o gráfico acabou ficando bem diferente do fornecido no enunciado do trabalho. Parece que os dados, em algum momento, passaram a ser comprimidos resultando nos mesmos valores.
+
 ### Alegrete
 
-theta_0=-3.1, theta_1=-1.11, 
-alpha=0.01, num_iterations=500
+#### Parâmetros
 
-Com esses valores chegamos ao um erro quadrático final de: 8.959027357713508
+* theta_0: -3.1
+* theta_1: -1.11
+* alpha: 0.01
+* num_iterations: 500
+
+#### Resultado
+
+Com esses valores chegamos a um erro quadrático final de: 8.959027357713508
 
 
