@@ -1,5 +1,5 @@
 import random
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def conflict(board):
     n = len(board)
@@ -119,10 +119,10 @@ def run_ga(g, n, k, m, e):
     """
     
     # Variaveis para gerar o grafico
-    generations_max = []
-    generations_min = []
-    generations_mean = []
-    x = range(g)
+    #generations_max = []
+    #generations_min = []
+    #generations_mean = []
+    #x = range(g)
 
     p = aleatorios(n)
     #print("Populacao gerada aleatoriamente com tamanho " + str(n) + ": " + str(p))
@@ -168,13 +168,13 @@ def run_ga(g, n, k, m, e):
         #print(evaluate(top(1, p)[0]))
         #print("-" * 20)
         
-        generations_max.append(conflict(sorted_population[len(sorted_population) - 1]))
-        generations_min.append(conflict(sorted_population[0]))
-        soma = 0
-        for i in sorted_population:
-            soma += conflict(i)
-        mean = soma / len(sorted_population)
-        generations_mean.append(mean)
+        #generations_max.append(conflict(sorted_population[len(sorted_population) - 1]))
+        #generations_min.append(conflict(sorted_population[0]))
+        #soma = 0
+        #for i in sorted_population:
+        #    soma += conflict(i)
+        #mean = soma / len(sorted_population)
+        #generations_mean.append(mean)
 
         #print("maior")
         #print(generations_max)
@@ -186,53 +186,16 @@ def run_ga(g, n, k, m, e):
         g = g - 1
 
     #print(len(x),len(generations_max),len(generations_min),len(generations_mean))
-    print(evaluate(top(1, p)[0]))
-    plt.plot(x, generations_max, c='green', label = 'Maior número de conflitos')
-    plt.plot(x, generations_min, c='blue', label = 'Menor número de conflitos')
-    plt.plot(x, generations_mean, c='red', label = 'Média do número de conflitos')
-    plt.ylabel('Número de Conflitos')
-    plt.xlabel('Gerações')
-    plt.title("Relação Geração X Conflitos")
-    plt.legend()
-    plt.show()
+    #print(evaluate(top(1, p)[0]))
+    #plt.plot(x, generations_max, c='green', label = 'Maior número de conflitos')
+    #plt.plot(x, generations_min, c='blue', label = 'Menor número de conflitos')
+    #plt.plot(x, generations_mean, c='red', label = 'Média do número de conflitos')
+    #plt.ylabel('Número de Conflitos')
+    #plt.xlabel('Gerações')
+    #plt.title("Relação Geração X Conflitos")
+    #plt.legend()
+    #plt.show()
+    return top(1, p)[0]
+    #return top(1, p)[0], generations_max, generations_min, generations_mean
 
-    return top(1, p)[0], generations_max, generations_min, generations_mean
-
-best, generations_max, generations_min, generations_mean = run_ga(100, 15, 2, 0.15, True)
-print(evaluate(best))
-
-maiores_g = []
-maior = max(generations_max)
-for i, v in enumerate(generations_max):
-    if(v == maior):
-        maiores_g.append(i)
-
-print("Geração com maior número de conflitos: " + str(maiores_g))
-print("Número de conflitos: " + str(maior))
-
-menores_g = []
-menor = min(generations_min)
-for i, v in enumerate(generations_min):
-    if(v == menor):
-        menores_g.append(i)
-
-print("Geração com menor número de conflitos: " + str(menores_g))
-print("Número de conflitos: " + str(menor))
-
-maiores_g_media = []
-maior = max(generations_mean)
-for i, v in enumerate(generations_mean):
-    if(v == maior):
-        maiores_g_media.append(i)
-
-print("Geração com maior média de conflitos: " + str(maiores_g_media))
-print("Número de conflitos: " + str(maior))
-
-menores_g_media = []
-menor = min(generations_mean)
-for i, v in enumerate(generations_mean):
-    if(v == menor):
-        menores_g_media.append(i)
-
-print("Geração com menor média de conflitos: " + str(menores_g_media))
-print("Número de conflitos: " + str(menor))
+#teste = run_ga(15, 5, 2, 0.2, True)
